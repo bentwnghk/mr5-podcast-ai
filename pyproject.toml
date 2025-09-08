@@ -1,5 +1,5 @@
 [project]
-name = "pdf-to-podcast"
+name = "podcast-ai"
 version = "0.1.0"
 description = "Generates podcast audio from text, documents, or a URL using AI." # Updated description slightly
 readme = "README.md"
