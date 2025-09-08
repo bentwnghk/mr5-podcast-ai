@@ -10,7 +10,6 @@ from pathlib import Path
 from tempfile import NamedTemporaryFile
 from typing import List, Literal, Optional, Dict, Any
 import json
-
 import gradio as gr
 import sentry_sdk
 from fastapi import FastAPI
@@ -716,7 +715,7 @@ with gr.Blocks(theme="ocean", title="Mr.🆖 PodcastAI 🎙️🎧", css="footer
 
     with gr.Group(visible=True) as file_upload_group:
         file_input = gr.Files(
-            label="Upload TXT, PDF, DOCX, or Image Files",
+            label="Upload TXT, PDF, DOCX, JPG, JPEG, or PNG Files",
             file_types=allowed_extensions,
             file_count="multiple",
         )
