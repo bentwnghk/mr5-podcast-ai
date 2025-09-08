@@ -12,7 +12,7 @@
 
 - **📁 Versatile Input Support:** Upload documents (PDF, DOCX, TXT), images with OCR (JPG, JPEG, PNG), paste text directly, or convert websites via URL
 - **🤖 AI-Powered Dialogue Generation:** Uses OpenAI's GPT-4.1-mini to create natural, engaging podcast conversations from your content
-- **🎵 Professional Audio:** Leverages OpenAI's text-to-speech models for high-quality, lifelike voices through one-api routing
+- **🎵 Professional Audio:** Leverages OpenAI's text-to-speech models for high-quality, lifelike voices through Mr.🆖 AI Hub routing
 - **🌐 Multi-Language Support:** Generate podcasts in English, Chinese (Traditional), or Cantonese with optimized voice synthesis
 - **💰 Cost Transparency:** Real-time TTS cost calculation and tracking (English, Chinese, Cantonese)
 - **🖥️ User-Friendly Interface:** Gradio-based web interface for easy interaction
@@ -52,7 +52,7 @@ The project includes sample inputs:
    - Set environment variables:
      ```bash
      export OPENAI_API_KEY="your-api-key-here"
-     export OPENAI_BASE_URL="https://api.mr5ai.com/v1"  # one-api endpoint
+     export OPENAI_BASE_URL="https://api.mr5ai.com/v1"  # Mr.🆖 AI Hub endpoint
      ```
    - Optional: Configure Sentry for error monitoring:
      ```bash
@@ -104,14 +104,14 @@ The project includes sample inputs:
 
 - **English:** Standard OpenAI TTS models
 - **Chinese (繁體):** Traditional Chinese with optimized output
-- **Cantonese:** Specialized voice support through one-api
+- **Cantonese:** Specialized voice support through Mr.🆖 AI Hub
 
 ## Architecture
 
 - **Frontend:** Gradio web interface
 - **Backend:** FastAPI server with async processing
 - **Storage:** Temporary file management with auto-cleanup
-- **AI Services:** OpenAI GPT-4.1-mini + TTS via one-api
+- **AI Services:** OpenAI GPT-4.1-mini + TTS via Mr.🆖 AI Hub
 - **Database:** Browser-based history (IndexedDB/localStorage)
 - **Deployment:** Ready for Docker/Uvicorn
 
@@ -146,14 +146,14 @@ TTS costs vary by language:
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `OPENAI_API_KEY` | Mr.🆖 AI Hub API key | Yes |
-| `OPENAI_BASE_URL` | one-api endpoint URL | Yes |
+| `OPENAI_BASE_URL` | Mr.🆖 AI Hub endpoint URL | Yes |
 | `SENTRY_DSN` | Sentry monitoring DSN | No |
 
 ### Custom API Endpoints
 
-The application is designed to work with one-api compatible endpoints. Set `OPENAI_BASE_URL` to:
+The application is designed to work with Mr.🆖 AI Hub compatible endpoints. Set `OPENAI_BASE_URL` to:
 - Production: `https://api.mr5ai.com/v1`
-- Local one-api: `http://localhost:3000/v1` (if running locally)
+- Local: `http://localhost:3000/v1` (if running locally)
 
 ## Troubleshooting
 
