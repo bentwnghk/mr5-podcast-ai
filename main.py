@@ -29,7 +29,7 @@ import pytz
 OPENAI_VOICE_MAPPINGS = {
     "female-1": "nova",
     "male-1": "alloy",
-    "female-2": "shimmer",
+    "female-2": "fable",
     "male-2": "echo",
 }
 
